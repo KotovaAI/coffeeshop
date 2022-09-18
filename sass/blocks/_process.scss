@@ -1,0 +1,19 @@
+
+// .process__item {
+//     display: block;
+// }
+.process__item img {
+    max-width: 360px;
+    // overflow: auto;
+    background:  #413016; /* Цвет фона */
+    margin: 5px;
+    padding: 2px;
+    @media (max-width: 599px) {
+        max-width: 290px;
+    }
+}
+.process__item p {
+    font: size 2em;
+    line-height:1;
+    margin-top: 0.5em;
+}

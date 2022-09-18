@@ -1,0 +1,34 @@
+.footer {
+  background-color: #2e2012;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  & nav {
+    margin-top: 0;
+  }
+}
+.footer__row {
+  display: flex;
+  flex-direction: row;
+ // justify-content: start;
+}
+.footer__item {
+  display: block;
+  align-items: center;
+  & a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 2em;
+    &:hover {
+        color: #c59039;
+    }
+  }
+}
+.footer__item-copyright {
+  display: flex;
+  justify-content: end; 
+  color:#555;
+  
+  @media (max-width: 599px) {
+      display: none;
+  }
+}

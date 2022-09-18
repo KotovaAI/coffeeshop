@@ -1,0 +1,58 @@
+.history__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-shrink: 0;
+   
+    @media (max-width: 699px) {
+        display: flex;
+        flex-direction: column-reverse;  
+    }
+}
+.history__item-mini {
+    display: flex;
+    flex-direction: column;
+}
+.history__item  img{
+    min-width: 290px;
+    max-width: 360px;
+    background:  #413016; 
+    margin: 5px;
+    padding: 2px;
+    @media (max-width: 799px) {
+        max-width: 290px;
+    }
+    // @media (max-width: 599px) {
+    //     max-width: 290px;
+    // }
+}
+.histopy__item-high  img{
+    min-height: 730px;
+    object-fit: cover;
+    
+    @media (max-width: 799px) {
+       display: none;
+    }
+}
+.histopy__text {
+    font-size: 1.2em;
+    margin-top: 1em;
+    min-width: 290px;
+    max-width: 360px;
+    font-family: 'Akaya Telivigala', cursive;
+     
+}
+.histopy__text li::before {
+    content: "\2014";
+        }
+.histopy__text li, .histopy__text p {
+    text-align:left ;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+ }
+ .histopy__text p  {
+    font-family: 'Akaya Telivigala', cursive;
+   text-decoration: underline;  
+   font-size: 1.3em;
+    line-height:1;
+ }

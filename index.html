@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>Кофе</title>
+		<meta name="description" content="Кофейня" />
+		<meta name="keywords" content="Готовим вкусное кофе" />
+		
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet"/>
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/img/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+
+
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com"> -->
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">  -->
+	</head>
+	<body>
+		<header class="header" id="header">
+			
+			<div class="conteiner">
+				<nav >
+					
+					<div class="header__left">
+						<li><img class="logo" src="./img/logo.svg" alt="лого"></li>
+						<li class="header__left-item"><a href="#header"> Главная</a></li>
+						<li class="header__left-item"><a href="#contact">Контакты</a></li>
+						<li class="header__left-item"><a href="#menu">Меню</a></li>
+						<li class="header__left-item"><a href="#otzyv">Отзывы</a></li>
+					</div>
+
+					<!-- <div class="header__right"> -->
+						<!-- <div class="header__right-item"><a href="#">Магазин</a></div>-->
+						
+						<!-- <div class="header__right-item header__right-search"><a href="#"></a></div> -->
+					<!-- </div> -->
+				</nav>
+				<h1 class="header__title" >Насладитесь нашим<br>утренним кофе</h1>
+				<p class="header__subtitle">Кофе варится путем обжаривания зеленых <br>кофейных зерен над раскаленными углями в жаровне.</p>
+				<div class="header__video"> 
+					<video class="video"  id="video" onmouseover="playPause(this)" onmouseleave="playPause(this)" onload="play(this)" loop >
+					<source src="./img/video.mp4" type="video/mp4"></source>
+				
+				</div> 
+			</div><!--conteiner-->
+		</header>
+		<section class="process">
+			<div class="conteiner">
+
+				<div class="row">
+					<div class="process__item block">
+						<p class="text-center">Лучший вкус кофе</p>
+						<img src="./img/process/1.jpg" alt="1"></div>
+					<div class="process__item">
+						<p class="text-center">Место, где можно потеряться </p>
+						<img src="./img/process/2.jpg" alt="2"></div>
+					<div class="process__item">
+						<p class="text-center">Лучшее кофе для Вас</p>
+						<img src="./img/process/4.jpg" alt="3"></div>
+				</div><!--process__row-->
+			</div>
+		</section><!--процесс-->
+		<section class="histopy">
+			<div class="conteiner">
+				<div class="history__item row">
+					<div class="history__item-mini">
+						<img src="./img/history/1.jpg" alt="">
+						<img src="./img/history/5.jpg" alt="">
+					</div>
+					<div class="histopy__item-high"><img src="./img/process/12.jpg" alt=""></div>
+					<div class="histopy__text ">
+						<h2 class="text-center">1 октября отмечают Международный день кофе.</h2>
+						<p> Как сварить вкусный кофе? 
+						<li> Главное условие – постепенный медленный нагрев жидкости с молотыми зернами в турке. При этом важно следить, чтобы соблюдался температурный режим: слишком высокий приведет к разрыву верхнего слоя – пенки. Сильный огонь – враг в создании ароматного напитка.</li>
+						<li> Помол лучше выбирать мелкий, а зерна молоть непосредственно перед завариванием.</li>  
+						<li> Подача – тоже важный этап в создании напитка. Перед тем, как разлить смесь, чашки нужно прогреть, так лакомство дольше сохранит свои вкусовые особенности.</li>
+					</div>
+				</div>
+			</div>
+		</section><!--histopy-->
+		<section class="menu " id="menu">
+			<div class="conteiner">
+				<!-- <div class="menu__subtitle text-center">Меню</div> -->
+				<h2 class="menu__title text-center" >Наше меню</h2>
+				<div class="row">
+					<div class="menu__card">
+						<a href="#" class="menu__item img--see"> <img src="./img/menu/1f.jpg" alt="1">
+							<div class="menu__item-text">
+								<h3>Раф</h3> 
+								<p>Cмешивания эспрессо, молока, сливок, сиропа, и последующим взбиванием паром.</p>
+							</div>
+							<p class="menu__price" style="width: 2m;">100 руб.</p>
+						</a>
+						<a class="menu__item img--see" href="#"><img src="./img/menu/4.jpg" alt="1">
+							<div class="menu__item-text">
+								<h3>Капучино</h3>
+								<p> Классический кофейный напиток на основе эспрессо и взбитого молока.</p>
+							</div>
+							<p class="menu__price" style="width: 2em;">100 руб.</p>
+						</a> 
+						<a href="" class="menu__item img--see"><img src="./img/menu/6.jpg" alt="1"> 
+							<div class="menu__item-text">
+								<h3>Латте</h3>
+								<p>Молочный слоеный кофе. Взбитое молоко, насыщенный вкус эспрессо.</p>
+							</div>
+							<p class="menu__price" style="width: 2em;">100 руб.</p>
+						</a>
+						<a href="#" class="menu__item img--see"><img src="./img/menu/1.jpg" alt="1">
+							<div class="menu__item-text">
+								<h3>Флэт Уайт</h3>
+								<p>Напиток на основе эспрессо и молока. Более насыщенный кофейный вкус с нежной тонкой молочной пеной.</p>
+							</div>
+							<p class="menu__price" style="width: 2em;">100 руб.</p>
+						</a>
+					</div><!--menu__card-->
+					<div class="menu__card">
+						<a href="#"class="menu__item img--see"><img src="./img/menu/7.jpg" alt="1">
+							
+							<div class="menu__item-text">
+								<h3>Американо</h3>
+								<p>Черный кофе на основе эспрессо с добавлением горячей воды.</p>
+							</div>
+							<p class="menu__price" style="width: 2em;">100 руб.</p>
+						</a>
+						<a href="#" class="menu__item img--see"><img  src="./img/menu/2.jpg" alt="1">
+							
+							<div class="menu__item-text">
+								<h3>Эспрессо</h3>
+								<p>Насыщенный черный кофе.</p>
+							</div>
+							<p class="menu__price" style="width: 2em;">100 руб.</p></a>
+						
+						<a href="#" class="menu__item img--see">	<img src="./img/menu/3.jpg" alt="1">
+							
+							<div class="menu__item-text">
+								<h3 >Фраппучино </h3>
+								<p>Двойной эспрессо. Далее кофе, молоко, сахар, сироп и лед. Сверху выкладываются взбитые сливки.</p></div>
+							<p class="menu__price" style="width: 1.2em;">100 руб.</p></a>
+						
+						
+					</div><!--menu__card-->
+				</div>
+			</div>
+		</section>
+		<section class="otzyv " id="otzyv">
+			<div class="conteiner">
+				<h3 class="otzyv__subtitle text-center">Отзывы</h3>
+				<h2 class="otzyv__title text-center">Говорят наши клиенты</h2>
+				<div class="slider">
+					<div class="item">
+						<img style="border-radius: 0;" src="./img/otzyv/4.svg" alt="Первый слайд">
+						<div class="slideText">
+							<div class="otzyv-item-text">Текст отзыва-1</div>
+						</div>
+					</div>
+				
+					<div class="item">
+						<img src="./img/otzyv/2.jpg" alt="Второй слайд">
+						<div class="slideText">
+							<div class="otzyv-item-text">Текст отзыва-2</div>
+						</div>
+					</div>
+				
+					<div class="item">
+						<img src="./img/otzyv/3.jpg" alt="Третий слайд">
+						<div class="slideText">
+							<div class="otzyv-item-text">Текст отзыва-3 </div>
+						</div>
+					</div>
+				    <div class="item">
+						<img src="./img/otzyv/1.jpg" alt="4 слайд">
+						<div class="slideText">
+							<div class="otzyv-item-text">Текст отзыва-4 </div>
+						</div>
+					</div>
+					<a class="prev" onclick="minusSlide()">&#8249;</a>
+					<a class="next" onclick="plusSlide()">&#8250;</a>
+				</div>
+				
+				<div class="slider-dots">
+					<span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+					<span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+					<span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+					<span class="slider-dots_item" onclick="currentSlide(4)"></span> 
+				</div><!--slaider-->
+			</div><!--conteiner-->
+		</section><!--otzyv-->
+		<section class="contact " id="contact">
+			<h2 class="text-center">Контакты</h2>
+			<div class="conteiner text-center">
+				<div class="contact__row" >
+					<div class="contact__row-map">
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A096aece593ed8227913aa207e0fed0db012b6134e5ba90ee5687e5d156eccaf4&amp;source=constructor" width="320" height="320" frameborder="0"></iframe>
+					</div>
+					<div class="contact__item">
+					
+						<li class="contact__item-text">Адрес: Санкт-Петербург, ул.Димитрова, д.26</li>
+						<li class="contact__item-text">Метро: Проспект Славы</li>
+						<li class="contact__item-text"><a href="tel:+8125555555">Телефон: (812) 555-55-55</a></li>
+						<li class="contact__item-text">Открыто: пн, вт, ср, чт, пт 8:00—21:00; сб, вс 9:00—21:00</li>
+					
+					</div>
+				</div>
+			</div><!--conteiner-->
+		</section>
+		<footer class="footer">
+			<div class="conteiner flex">
+				
+				<div class="footer__row">
+					
+					<li class="footer__item"><a href="#header"> Главная</a></li>
+					<li class="footer__item"><a href="#contact">Контакты</a></li>
+					<li class="footer__item"><a href="#menu">Меню</a></li>
+					<li class="footer__item"><a href="#otzyv">Отзывы</a></li>
+				</div>
+				<div class="footer__item-copyright">Copyright &copy; 2022 Котова Анна</div>
+			</div><!--conteiner-->
+
+			
+		</footer>
+		<script src="https://kit.fontawesome.com/7d25cd4e96.js" crossorigin="anonymous"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
